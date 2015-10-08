@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>iframeCeption</title>
+</head>
+<body>
+<h1>this is iframeception</h1>
+<iframe id="iframe" style="height:100vh; width:100vw;" src="file:///Users/erikbelusic/Projects/iframeception.com/index.html?innerframe=true"></iframe>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script >
+	var rand = Math.floor(Math.random() * 1000000);
+	$('#iframe').attr('src', 'file:///Users/erikbelusic/Projects/iframeception.com/index.html?' + rand);
+</script>
+</body>
+</html>
